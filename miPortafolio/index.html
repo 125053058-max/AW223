@@ -8,7 +8,7 @@
 </head>
 <html> lang= "es">
 <body>
-    <!-- aquí esta el emcabezado -->
+    <!-- aquí esta el encabezado -->
     <header> 
         <h1> Mi portafolio</h1>
         <p> Bienvenido a mi sitio web personal</p>
@@ -69,7 +69,7 @@
         <ul class="lista-habilidades">
             <li>Java</li>
             <li>Scratch</li>
-            <li>PSint</li>
+            <li>PSeint</li>
             <li>Packet Tracer</li>
             <li>MySQL</li>
 
@@ -77,31 +77,50 @@
 
        </section>
        <!-- Seccion de contacto -->
-        <section>
-            <h2> Contactame</h2>
-            <form action="">
-                <div>
-                    <label for="Nombre"></label>
-                    <input type="text">
-                </div>
-                 <div>
-                    <label for="Correo"></label>
-                    <input type="text">
-                </div>
-                 <div>
-                    <label for="Mensaje"></label>
-                    <textarea rows="5"></textarea>
-                </div>
-            </form>
+        </label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="ejemplo@correo.com"
+            >
+        </div>
 
-        </section>
+        <div class="campo">
+            <label for="mensaje">
+                Mensaje
+            </label>
 
+            <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                placeholder="Escribe tu mensaje">
+            </textarea>
+        </div>
+          <button type="submit">
+    Enviar mensaje
+</button>
 
- </main>
+</form>
 
- <footer>
-    <p> 2026 Mi portafolio web</p>
-    <p> Practica de programación Web todos los derechos reservados</p>
- </footer>
+</section>
+
+</main>
+
+<!-- Pie de página -->
+<footer>
+
+    <p>
+        © 2026 Mi Portafolio
+    </p>
+
+    <p>
+        Práctica de Programación Web
+    </p>
+
+</footer>
+
 </body>
+
 </html>
