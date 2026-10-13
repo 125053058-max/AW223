@@ -10,7 +10,7 @@
     <!-- aquí esta el encabezado -->
     <header> 
         <h1> Mi portafolio</h1>
-        <p id=""bienvenida">
+        <p id="bienvenida">
 
             Bienvenido a mi sitio web personal
         </p>
@@ -21,10 +21,12 @@
     </header>
     <!-- aquí comienza la navegación -->
      <nav>
-        <a href=""> Inicio </a>
-        <a href=""> Sobre mi </a>
-        <a href=""> Habilidades </a>
-        <a href=""> Proyectos </a>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="admin.html">Admin</a>
     </nav>
 
         <!-- Contenido principal -->
@@ -86,18 +88,18 @@
 
        </section>
        <!-- Seccion de contacto -->
-        <section id="#contacto">
+        <section id="contacto">
 
             <h2>Contacto</h2>
 
-            <form id="">
+            <form id="formulario">
 
                 <div class="campo">
-                    <lavel for="nombre"> 
+                    <label for="nombre"> 
                         Nombre
-                    </lavel>
+                    </label>
                     <input
-                    types="text";
+                    type="text"
                     id="nombre"
                     name="nombre"
                     placeholder="Escribe tu nombre"
@@ -137,6 +139,58 @@
 </section>
 
 </main>
+
+<!-- Administrador -->
+
+<section id="admin" class="vista-oculta"></section>
+ <h2>Mensajes recibidos</h2>
+ 
+ <div class="tabla-contenedor">
+    <table>
+        <thead
+        <tr>
+              <th>ID</th>
+               <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Mensaje</th>
+                    <th>Acciones</th>
+        </tr>
+           </thead>
+
+            <tbody id="tablaMensajes"></tbody>
+
+    </table>
+
+ </div>
+
+            <tbody id="tablaMensajes"></tbody>
+        </table>
+    </div>
+
+    <button type="button" id="volverPortafolio">
+         Volver al portafolio
+    </button>
+</section>
+
+<!-- Editar mensaje -->
+ <section id="editar" class="vista-oculta">
+      <h2>Editar mensaje</h2>
+
+
+    <form id="formEditar">
+        <div class="campo">
+            <label for="nombreEditar">Nombre</label>
+            <input type="text" id="nombreEditar" required>
+        </div>
+         <div class="campo"></div>
+         <label for="mensajeEditar">Mensaje</label>
+          <textarea id="mensajeEditar" rows="5" required></textarea>
+    </div>
+     <button type="submit">Actualizar mensaje</button>
+     <button type="button" id="cancelarEdicion">Cancelar</button>
+    </form>
+ </section>
+
 
 <!-- Pie de página -->
 <footer>

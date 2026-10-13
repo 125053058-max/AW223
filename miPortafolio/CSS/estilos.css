@@ -153,7 +153,7 @@ section h2{
 
     /* Habilidades */
 
-    .lista.habilidades{
+    .lista-habilidades{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -166,8 +166,8 @@ section h2{
     .lista-habilidades li{
         padding: 12px 20px;
         background-color: rgb(223, 128, 199);
-        border: 3px, solid rgb(15, 15, 15);
-        border-radius: bold;
+        border: 3px solid rgb(15, 15, 15);
+        border-radius: 8px;
         font-weight: bold;
 
     }
@@ -279,3 +279,69 @@ footer p {
     }
 
 }
+
+/* Vistas del administrador */
+
+.vista-oculta {
+    display: none;
+    .tabla-contenedor {
+    width: 100%;
+    width: 100%; overflow-x: auto;
+    margin-bottom: 20px;
+
+}
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+background-color: white;
+
+}
+
+th {
+    background-color: #550235;
+    color: white;
+
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+background-color: white;
+}
+
+th {
+background-color: #550235;
+color: white;
+}
+
+th, td {
+padding: 12px;
+border: 1px solid #ddd;
+text-align: left;
+overflow-wrap: anywhere;
+
+
+}
+
+td button {
+margin: 3px;
+
+}
+
+td button {
+
+margin: 3px;
+}
+
+@media (max-width: 600px) {
+
+th, td {
+padding: 6px;
+font-size: 12px;
+}
+
+}
+
+
