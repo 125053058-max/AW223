@@ -47,7 +47,7 @@
            <img src="" alt="">
             <div> 
                 <p> Algo sobre mi imagen</p>
-                <p> En esta práctica estoy aprendiendo HTML y CSS</p>
+                <p> En esta practica estoy aprendiendo HTML y CSS</p>
             
             </div>
         </div>
@@ -59,13 +59,13 @@
 
             <article>
                 <h3>Sistema de algo 1</h3>
-                <p>descripción del sistema</p>
+                <p>descripcion del sistema</p>
                 <a href="">Ver proyecto</a>
             </article>
 
             <article>
                 <h3>Sistema de algo 2</h3>
-                <p>descripción del sistema</p>
+                <p>descripcion del sistema</p>
                 <a href="">Ver proyecto</a>
             </article>
         </div>
@@ -92,40 +92,34 @@
 
             <h2>Contacto</h2>
 
-            <form id="formulario">
+            <form id="formulario"> action ="guardar_mensaje.php" method="post">
 
                 <div class="campo">
-                    <label for="nombre"> 
-                        Nombre
-                    </label>
+                    <label for="nombre"> Nombre</label>
                     <input
                     type="text"
                     id="nombre"
-                    name="nombre"
+                    name="txtnombre"
                     placeholder="Escribe tu nombre"
+                    requiered
                     >
                 </div>
             
             <div class="campo">
-                <label for="email">
-                    Correo electronico
-                </label>
-  
+                <label for="email">Correo electronico:</label>
             <input
                 type="email"
-                id="email"
-                name="email"
-                placeholder="ejemplo@correo.com"
+                id="correo"
+                name="txtcorreo"
+              placeholder="vanv26735@gmail.com"
             >
         </div>
 
         <div class="campo">
             <label for="mensaje">Mensaje</label>
-            
-
             <textarea
                 id="mensaje"
-                name="mensaje"
+                name="txtmensaje"
                 rows="5"
                 placeholder="Escribe tu mensaje">
             </textarea>
